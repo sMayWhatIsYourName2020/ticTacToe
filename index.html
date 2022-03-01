@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Крестики-нолики</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <main class="main">
+    <section class="playground">
+      <table class="table">
+        <tr>
+          <td class="table__cell" data-cell-number="1"></td>
+          <td class="table__cell" data-cell-number="2"></td>
+          <td class="table__cell" data-cell-number="3"></td>
+        </tr>
+        <tr>
+          <td class="table__cell" data-cell-number="4"></td>
+          <td class="table__cell" data-cell-number="5"></td>
+          <td class="table__cell" data-cell-number="6"></td>
+        </tr>
+        <tr>
+          <td class="table__cell" data-cell-number="7"></td>
+          <td class="table__cell" data-cell-number="8"></td>
+          <td class="table__cell" data-cell-number="9"></td>
+        </tr>
+      </table>
+    </section>
+    <section class="info">
+      <div class="player__wrapper">
+        <p class="player__first__name player__name active">PLAYER_1</p>
+        <div class="player__score">
+          <p class="player__first__score">0</p>
+          <p class="separator">:</p>
+          <p class="player__second__score">0</p>
+        </div>
+        <p class="player__second__name player__name">PLAYER_2</p>
+      </div>
+      <div class="player__control">
+        <button class="player__button player__reset invisible">RESET</button>
+        <button class="player__button player__start">START</button>
+        <button class="player__button player__again invisible">RESTART</button>
+      </div>
+    </section>
+    <div class="color__information">
+      <div class="color__container"><span class="winnerCombination__block"></span> <p class="color__information__text">- WIN</p></span></div>
+      <div class="color__container"><span class="drawCombination__block"></span> <p class="color__information__text">- DRAW</p></span></div>
+      <div class="color__container"><span class="active__block"></span> <p class="color__information__text">- ACTIVE PLAYER</p></span></div>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

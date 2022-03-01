@@ -1,0 +1,105 @@
+body {
+    font-family: 'Hubballi', cursive;
+    color: black;
+}
+
+.table {
+    border-collapse: collapse;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.table__cell {
+    width: 150px;
+    height: 150px;
+    font-size: 130px;
+    text-align: center;
+    vertical-align: middle;
+    /* padding: 50px 0px; */
+    border: 1px solid black;
+}
+
+.table__cell:hover, .player__button:hover {
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.winnerCombination {
+    color: green;
+}
+
+.drawCombination {
+    color: purple;
+}
+
+.main {
+    padding-top: 100px;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.player__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player__name {
+    font-size: 30px;
+}
+
+.player__score {
+    display: flex;
+    font-size: 30px;
+    min-width: 50px;
+    justify-content: space-between;
+}
+
+.active {
+    color: aqua;
+}
+
+.player__control {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.player__button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.color__container {
+    display: flex;
+    align-items: center;
+}
+
+.winnerCombination__block, .drawCombination__block, .active__block {
+    display: block;
+    height: 20px;
+    width: 100px;
+}
+
+.winnerCombination__block {
+    background-color: green;
+}
+
+.drawCombination__block {
+    background-color: purple;
+}
+
+.active__block {
+    background-color: aqua;
+}
+
+.color__information__text {
+    margin: 0 0 0 15px;
+    font-size: 25px;
+}
